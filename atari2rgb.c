@@ -4,10 +4,10 @@
 void atari2rgb(const char *fin, const char *fout, const unsigned char *pal)
 {
 	unsigned int i,j;
-    FILE *fi,*fo;
-    fi=fopen(fin,"rb");
-    if (fi)
-    {
+    	FILE *fi,*fo;
+    	fi=fopen(fin,"rb");
+    	if (fi)
+    	{
 		fseek(fi,0,SEEK_END);
 		j=ftell(fi);
 		fseek(fi,0,0);
